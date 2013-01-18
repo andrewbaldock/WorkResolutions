@@ -1,0 +1,150 @@
+<html>
+<head>
+<style>
+	body {
+		background-color: #FFF;
+	}
+	#container {
+		width: 960px;
+		margin: 0px auto 0px auto;
+	}
+	#top {
+		width: 820px;
+		min-height: 385px;
+		padding: 20px 70px 20px 70px;
+		background-image: url(images/background-top.png);
+	}
+	#top p {
+		font-family: "franklin-gothic-urw-cond", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size:15px;
+		color:#212121;
+		line-height:1.4em;
+	}
+	#middle {
+		width: 820px;
+		min-height: 348px;
+		padding: 20px 70px 20px 70px;
+		background-image: url(images/background-middle.png);
+	}
+	#middle p {
+		font-family: "franklin-gothic-urw-cond", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size:18px;
+		color:#212121;
+		line-height:1.4em;
+	}
+	#bottom {
+		width: 820px;
+		min-height: 184px;
+		padding: 20px 70px 20px 70px;
+		background-image: url(images/background-bottom.png);
+	}
+	.gray-bar {
+		width:820px;
+		height:5px;
+		background-color:#5c5b5b;
+	}
+	#idea-machine {
+		background-color: red;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border: 0;
+		outline: 0;
+		padding: 5px 10px 5px 10px;
+		font-family: "league-gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size:20px;
+		color:#FFF;
+	}
+	#idea-machine:hover {
+		background-color: #C00017;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border: 0;
+		outline: 0;
+		padding: 5px 10px 5px 10px;
+		font-family: "league-gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 20px;
+		color:#FFF;
+	}
+	h1 {
+		font-family: "league-gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 40px;
+		color: red;
+	}
+	h2 {
+		font-family: "league-gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 40px;
+		color: red;
+	}
+	h3 {
+		font-family: "league-gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 20px;
+		color: #5c5b5b;
+	{
+</style>
+<script src="//use.typekit.net/wlb6zwv.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="underscore-min.js"></script>
+<script>
+	var sayings = {};
+		sayings.p0 = "Stay more.";
+		sayings.p1 = "Eat food.";
+		sayings.p2 = "Celebrate.";
+		sayings.p3 = "Watch the Wire.";
+		sayings.p4 = "Sure.";
+		sayings.p5 = "More stuff.";
+		sayings.p6 = "Just do it!";
+	var count = _.size(sayings);
+	var current = 0;
+	var currentSayingID = 'p' + current;
+	console.log (currentSayingID);
+	console.log (sayings[currentSayingID]);
+	
+	function getNext() {
+		current = current + 1;
+		if (current >= count) {
+			current = 0;
+		}
+		currentSayingID = 'p' + current;
+		var currentSaying = sayings[currentSayingID];
+		jQuery("#text-gen p").html(currentSaying);
+	};
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=34365346926";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="container">
+	<div id="top">
+		<img src="images/wax-logo.png" style="float:left;">
+		<h1>Work Resolutions<br />
+		<span style="font-size:50px; color:#5c5b5b;">Be the Change Agent</span></h1>
+		</br>
+		<hr class="gray-bar"/> 
+		<p>Recent research shows that roughly one third (32%) of office workers acknowledge the need to adjust their everyday behaviors, but 24% haven't got around to it; and 19% lack the motivation entirely.</p>
+		<p>Here at Mindjet, we're taking the pledge to be the change we want to see in the office. And we invite you to join us. The Pledge: I pledge to be a change agent. I will be the difference I want to see in the workplace. I will encourage my colleagues to make small changes to their everyday routine so that together, we can push our organization forward. I will start today.</p>
+	</div>
+	<!-- end #top -->
+	<div id="middle">
+		<h2>Take the Pledge</h2>
+		<p>I pledge to be a change agent. I will be the difference I want to see in the workplace. I will encourage my colleagues to make small changes to their everyday routine so that together, we can push our organization forward. I will start today.</p>
+		<h3>Sign Your Pledge</h3>
+	</div><!-- #middle -->
+	<div id="bottom">
+		<h3>Want some ideas on how to get started being the Change Agent?</h3>
+		<div id="text-gen">
+			<input type="button" value="Get Ideas Now" onClick="getNext();" id="idea-machine">
+			<p>This year, I will</p>
+		</div>
+	</div>
+	<!-- end #bottom -->
+<div class="fb-comments" data-href="http://www.mindjet.com/resolutions" data-width="470" data-num-posts="2"></div>
+</div><!-- end #container -->
+</body>
+</html>
