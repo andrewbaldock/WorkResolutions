@@ -1,0 +1,245 @@
+html, body {
+	background-color: #333;
+	width:100%;
+}
+#outer-wrap {
+	width:1100px;
+	background-color: #3288A1;
+	display:block;
+	margin: -8px auto 0px auto;
+	top:0px;
+	bottom:0px;
+	border-right:1px #999 solid;
+	border-left:1px #999 solid;
+	padding-top:30px;
+}
+	
+#container {
+	width: 960px;
+	margin: 0px auto 0px auto;
+	box-shadow: 5px 5px 15px #111;
+}
+#top {
+	width: 820px;
+	min-height: 385px;
+	padding: 20px 70px 20px 70px;
+	background-image: url(images/background-top.png);
+}
+#waxseal {
+	margin-right:20px;
+}
+#subhead {
+	font-size:86px;;
+	color:#5c5b5b;
+	font-family: "league-gothic", sans-serif;
+	margin-top:-57px;
+	display:block;
+}
+	
+#top p {
+	font-family: "franklin-gothic-urw-cond", sans-serif;
+	font-size:18px;
+	color:#111;
+}
+#middle {
+	width: 820px;
+	min-height: 348px;
+	padding: 20px 70px 20px 70px;
+	background-image: url(images/background-middle.png);
+}
+#middle p {
+	font-family: "franklin-gothic-urw-cond", sans-serif;
+	font-size:20px;
+	color:#111;
+	line-height:1.4em;
+}
+#bottom {
+	width: 820px;
+	min-height: 184px;
+	padding: 20px 70px 20px 70px;
+	background-image: url(images/background-bottom.png);
+	background-color:#fff;
+}
+.gray-bar {
+	width:820px;
+	height:5px;
+	background-color:#5c5b5b;
+	margin-top:20px;
+}
+
+#formholder {
+	margin-top:-20px;
+	margin-left:-5px;
+	margin-bottom:-20px;
+}
+#form-message {font-size:24px;}
+.pledge-input {
+	width:240;
+	font-family: "franklin-gothic-urw-cond", sans-serif;
+	font-size:18px;
+	color:#111;
+	font-size: 24px;
+	line-height:30px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	height:36px;
+	margin-top:-10px;
+	display:block;
+	margin-bottom:10px;
+	margin-right:10px;
+	text-indent:3px;
+}
+::-webkit-input-placeholder {
+    color: #555;
+    font-weight:200;
+    text-indent:3px;
+}
+:-moz-placeholder {
+    color: #555;
+    font-weight:200;
+	  text-indent:3px;
+}
+::-moz-placeholder {
+    color:#555;
+    font-weight:200;
+    text-indent:3px;
+}
+:-ms-input-placeholder {
+    color:    #555;
+    font-weight:200;
+    text-indent:3px;
+}
+input[type=text] {
+    -webkit-box-shadow:inset 0 0 0px grey!important;
+       -moz-box-shadow:inset 0 0 0px grey!important;
+            box-shadow:inset 0 0 0px grey!important;
+                text-indent:3px;
+}​
+.pledge-input input[type=text] {
+	border: 1px grey solid!important;
+	background-color:#fff;
+	color:#111;
+	text-indent:3px;
+}
+a {text-decoration:none}
+
+#sign-up-button {
+	background-color: #EC0019;
+	border: 0;
+	outline: 0;
+	padding:5px;
+	font-family: "league-gothic", sans-serif;
+	font-size:24px;
+	color:#FFF;
+}
+
+#idea-machine {
+	background-color: #EC0019;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 0;
+	outline: 0;
+	padding: 5px 20px 5px 20px;
+	font-family: "league-gothic", sans-serif;
+	font-size:24px;
+	color:#FFF;
+}
+#idea-machine:hover, #sign-up-button:hover {
+	background-color: #C00017;
+}
+#idea-box {
+	float:right;
+  width: 650px;
+  font-style:italic;
+  font-size:22px;
+  font-family: "franklin-gothic-urw-cond", sans-serif;
+  font-weight:bold;
+  color: #444;
+  height:40px;
+  line-height:40px
+}
+#butt-wrap-out {
+   float:left;
+   width:150px;
+}
+#butt-wrap-in {
+   border-right:#777 2px solid;
+   width:160px;
+}
+#moreideas {
+  font-size: 11px;
+	font-family: "franklin-gothic-urw-cond", sans-serif;
+	text-align: center;
+	color: #555;
+	width: 142px;
+	margin-top: 5px;
+}	
+h1#headline {
+	font-family: "league-gothic", sans-serif;
+	font-size: 54px;
+	color: #EC0019;
+	font-weight:200;
+	position:relative;
+	top:-5px;
+}
+h2 {
+	font-family: "league-gothic", sans-serif;
+	font-size: 54px;
+	color: #EC0019;
+		font-weight:200;
+	margin:10px 0px 0px 0px;
+}
+h3 {
+	font-family: "league-gothic", sans-serif;
+	font-size: 34px;
+	font-weight:200;
+	color: #5c5b5b;
+	margin-top:-10px;
+}
+p#pledge {
+	margin-top:0px;
+	font-size:24px;
+}
+#fb-shelf {
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
+  width:820px;
+	background-color: #fff;
+	margin:auto;
+	display:block;
+	padding-top:20px;
+	padding-left:70px;
+	padding-right:70px;
+}
+.fb-comments {
+	margin-bottom:100px;
+}
+#inspired-bar {
+	height:50px;
+	width:890px;
+	background-color:#4D4C4C;
+	color:#fff;
+	font-family: "franklin-gothic-urw-cond", sans-serif;
+	font-size:20px;
+	line-height:50px;
+	font-weight:bold;
+	padding-left:70px
+}
+
+#whatwrap {
+	width:890px;
+	display:block;
+	margin-bottom:20px;
+	}
+	
+#what {
+		font-family: "league-gothic", sans-serif;
+	font-size: 34px;
+	font-weight:200;
+	color: #5c5b5b;
+}
+#share {
+			font-family: "franklin-gothic-urw-cond", sans-serif;
+	font-size:20px;
+}

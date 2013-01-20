@@ -1,150 +1,87 @@
 <html>
 <head>
-<style>
-	body {
-		background-color: #FFF;
-	}
-	#container {
-		width: 960px;
-		margin: 0px auto 0px auto;
-	}
-	#top {
-		width: 820px;
-		min-height: 385px;
-		padding: 20px 70px 20px 70px;
-		background-image: url(images/background-top.png);
-	}
-	#top p {
-		font-family: "franklin-gothic-urw-cond", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-size:15px;
-		color:#212121;
-		line-height:1.4em;
-	}
-	#middle {
-		width: 820px;
-		min-height: 348px;
-		padding: 20px 70px 20px 70px;
-		background-image: url(images/background-middle.png);
-	}
-	#middle p {
-		font-family: "franklin-gothic-urw-cond", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-size:18px;
-		color:#212121;
-		line-height:1.4em;
-	}
-	#bottom {
-		width: 820px;
-		min-height: 184px;
-		padding: 20px 70px 20px 70px;
-		background-image: url(images/background-bottom.png);
-	}
-	.gray-bar {
-		width:820px;
-		height:5px;
-		background-color:#5c5b5b;
-	}
-	#idea-machine {
-		background-color: red;
-		-moz-border-radius: 5px;
-		border-radius: 5px;
-		border: 0;
-		outline: 0;
-		padding: 5px 10px 5px 10px;
-		font-family: "league-gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-size:20px;
-		color:#FFF;
-	}
-	#idea-machine:hover {
-		background-color: #C00017;
-		-moz-border-radius: 5px;
-		border-radius: 5px;
-		border: 0;
-		outline: 0;
-		padding: 5px 10px 5px 10px;
-		font-family: "league-gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-size: 20px;
-		color:#FFF;
-	}
-	h1 {
-		font-family: "league-gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-size: 40px;
-		color: red;
-	}
-	h2 {
-		font-family: "league-gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-size: 40px;
-		color: red;
-	}
-	h3 {
-		font-family: "league-gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-size: 20px;
-		color: #5c5b5b;
-	{
-</style>
-<script src="//use.typekit.net/wlb6zwv.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="underscore-min.js"></script>
-<script>
-	var sayings = {};
-		sayings.p0 = "Stay more.";
-		sayings.p1 = "Eat food.";
-		sayings.p2 = "Celebrate.";
-		sayings.p3 = "Watch the Wire.";
-		sayings.p4 = "Sure.";
-		sayings.p5 = "More stuff.";
-		sayings.p6 = "Just do it!";
-	var count = _.size(sayings);
-	var current = 0;
-	var currentSayingID = 'p' + current;
-	console.log (currentSayingID);
-	console.log (sayings[currentSayingID]);
-	
-	function getNext() {
-		current = current + 1;
-		if (current >= count) {
-			current = 0;
-		}
-		currentSayingID = 'p' + current;
-		var currentSaying = sayings[currentSayingID];
-		jQuery("#text-gen p").html(currentSaying);
-	};
-</script>
+	<meta charset="utf-8">
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta content="Mindjet is software for brainstorming, sharing ideas,  creating plans, prioritizing tasks, and working across teams to implement projects" name="description">
+	<title>Work Resolutions: Be the Change Agent | Mindjet</title>
+	<link rel="stylesheet" href="resolutions.css" />
 </head>
+
 <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=34365346926";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<div id="container">
-	<div id="top">
-		<img src="images/wax-logo.png" style="float:left;">
-		<h1>Work Resolutions<br />
-		<span style="font-size:50px; color:#5c5b5b;">Be the Change Agent</span></h1>
-		</br>
-		<hr class="gray-bar"/> 
-		<p>Recent research shows that roughly one third (32%) of office workers acknowledge the need to adjust their everyday behaviors, but 24% haven't got around to it; and 19% lack the motivation entirely.</p>
-		<p>Here at Mindjet, we're taking the pledge to be the change we want to see in the office. And we invite you to join us. The Pledge: I pledge to be a change agent. I will be the difference I want to see in the workplace. I will encourage my colleagues to make small changes to their everyday routine so that together, we can push our organization forward. I will start today.</p>
+	<div id="fb-root"></div>
+
+	<div id="outer-wrap">
+		<div id="container">
+			<div id="top">
+				<img id="waxseal" src="images/wax-logo.png" style="float:left;">
+				<h1 id="headline">Work Resolutions</h1>
+				<div id="subhead">Be the Change Agent</div>
+				<div class="gray-bar"/>&nbsp;</div>
+				<p>Recent research shows that roughly one third (32%) of office workers acknowledge the need to adjust their everyday behaviors, but 24% haven't got around to it; and 19% lack the motivation entirely.</p>
+				<p>Here at Mindjet, we're taking the pledge to be the change we want to see in the office. And we invite you to join us. The Pledge: I pledge to be a change agent. I will be the difference I want to see in the workplace. I will encourage my colleagues to make small changes to their everyday routine so that together, we can push our organization forward. I will start today.</p>
+			</div>
+			<!-- end #top -->
+			<div id="middle">
+				<h2>Take the Pledge</h2>
+				<p id="pledge">I pledge to be a change agent. I will be the difference I want to see in the workplace. I will encourage my colleagues to make small changes to their everyday routine so that together, we can push our organization forward. I will start today.</p>
+				<h3>Sign Your Pledge</h3>
+				<div id="formholder">
+					<form id="13JAN16AMMJPGENChangeAgentPledge" autocomplete="off" name="13JAN16AMMJPGENChangeAgentPledge" action="https://secure.eloqua.com/e/f2" target="elq-iframe" method="POST">
+						<table style="text-align:left;border:none;" id="form-list">
+								<tbody>
+										<tr>
+												<td><input type="text" tabindex="1" id="first" class="pledge-input" name="first" placeholder="First Name" /></td>
+												<td><input type="text" tabindex="3" id="email"  class="pledge-input" name="email" placeholder="Email Address"/></td>
+										</tr>
+										<tr>
+												<td><input type="text" tabindex="2" id="last"  class="pledge-input" name="last"  placeholder="Last Name"/></td>
+												<td><input type="submit" id="sign-up-button"  class="pledge-input btn red"  name="mysubmit" value="SUBMIT" tabindex="4" /></td>
+										</tr>
+										<tr id="message-row">
+												<td colspan="2"><div id="form-message">&nbsp;</div></td>
+										</tr>    
+								</tbody>
+						</table>
+						<input type="hidden" name="elqCustomerGUID" value=""  />
+						<input type="hidden" name="elqFormName" value="13JAN16AMMJPGENChangeAgentPledge" />
+						<input type="hidden" name="elqSiteID" value="1892487149" />
+						<input type="hidden" name="form_lang" value="en" />
+						<input type="hidden" name="FSID" id="fsid" value=""  />
+						<input type="hidden" name="salesid" value="" />
+						<input type="hidden" name="sourcecamp" id="sourcecamp" value="" />
+						<input type="hidden" name="sourcetype" id="sourcetype" value="" />
+						<input type="hidden" name="submit_device" value="web" />
+					</form>
+				</div>
+			
+			
+			</div><!-- #middle -->
+			<div id="bottom" style="display:none;">
+				<h3>Want some ideas on how to get started being the Change Agent?</h3>
+				<div id="text-gen">
+					<div id="butt-wrap-out">
+						<div id="butt-wrap-in">
+							<input type="button" value="Get Ideas Now" onClick="getNext();" id="idea-machine">
+						</div>
+						<p id="moreideas">Need more ideas, click again!</p>
+					</div>
+					<div id="idea-box">This year, I will...</div>
+				</div>
+			</div>
+			<div id="inspired-bar">Work Inspired.  Try Mindjet Today.</div>
+			<!-- end #bottom -->
+			<div id="fb-shelf">
+				<div id="whatwrap"><span id="what">What are your goals? </span><span id="share"> Share them in the comment section below.</span></div>
+				<div class="fb-comments" data-href="http://www.mindjet.com/resolutions" data-width="470" data-num-posts="2"></div>
+			</div><p style="height:2px"><iframe width="2" scrolling="no" height="2" id="elq-iframe" name="elq-iframe" src="https://www.mindjet.com/connect/blank" seamless="seamless"></iframe></p>
+		</div><!-- end #container -->
 	</div>
-	<!-- end #top -->
-	<div id="middle">
-		<h2>Take the Pledge</h2>
-		<p>I pledge to be a change agent. I will be the difference I want to see in the workplace. I will encourage my colleagues to make small changes to their everyday routine so that together, we can push our organization forward. I will start today.</p>
-		<h3>Sign Your Pledge</h3>
-	</div><!-- #middle -->
-	<div id="bottom">
-		<h3>Want some ideas on how to get started being the Change Agent?</h3>
-		<div id="text-gen">
-			<input type="button" value="Get Ideas Now" onClick="getNext();" id="idea-machine">
-			<p>This year, I will</p>
-		</div>
-	</div>
-	<!-- end #bottom -->
-<div class="fb-comments" data-href="http://www.mindjet.com/resolutions" data-width="470" data-num-posts="2"></div>
-</div><!-- end #container -->
+
+	<script src="//use.typekit.net/wlb6zwv.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="underscore-min.js"></script>
+	<script src="validate.js"></script>
+	<script src="resolutions.js"></script>
 </body>
 </html>
